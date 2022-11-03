@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint src/ --fix && eslint test/ --fix",
     "test": "vitest run",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +15,7 @@
   "devDependencies": {
     "eslint": "^8.26.0",
     "eslint-config-standard": "^17.0.0",
+    "husky": "^8.0.1",
     "vitest": "^0.24.5"
   },
   "eslintConfig": {
