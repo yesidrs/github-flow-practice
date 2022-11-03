@@ -1,0 +1,27 @@
+{
+  "name": "github-flow-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run",
+    "coverage": "vitest run --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.26.0",
+    "eslint-config-standard": "^17.0.0",
+    "vitest": "^0.24.5"
+  },
+  "eslintConfig": {
+    "extends": "standard",
+    "rules": {
+      "no-unused-vars": "warn",
+      "space-before-function-paren": "off",
+      "no-multiple-empty-lines": "off",
+      "eol-last": "off"
+    }
+  }
+}
