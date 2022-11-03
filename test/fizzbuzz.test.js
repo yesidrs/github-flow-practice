@@ -6,6 +6,14 @@ describe('description', () => {
     expect(typeof fizzbuzz).toBe('function')
   })
 
+  it('should throw if not number is provided as parameter', () => {
+    expect(() => fizzbuzz('a')).toThrow()
+  })
+
+  it('should to show the correct throw message if not number is provided as parameter', () => {
+    expect(() => fizzbuzz('a')).toThrow('parameter is not a number')
+  })
+
   it('should return Fizz if the number is multiple of 3', () => {
     expect(fizzbuzz(3)).toBe('Fizz')
     expect(fizzbuzz(6)).toBe('Fizz')

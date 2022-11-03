@@ -1,4 +1,8 @@
 export const fizzbuzz = (num) => {
+  if (typeof num !== 'number') {
+    throw new Error('parameter is not a number')
+  }
+
   if (num % 3 === 0 && num % 5 === 0) {
     return 'FizzBuzz'
   }
